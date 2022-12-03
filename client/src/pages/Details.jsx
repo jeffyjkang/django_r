@@ -1,7 +1,7 @@
 import { useContext, useState } from "react"
 import { useNavigate } from "react-router-dom";
 import { AppContext } from "../App"
-// import { FaHeart, FaRegHeart, FaMountain } from 'react-icons/fa';
+import { FaHeart, FaRegHeart } from 'react-icons/fa';
 
 export default function Details() {
 
@@ -26,7 +26,7 @@ export default function Details() {
               className='addToWishlistButton'
               onClick={()=>appContext.toggleWishlist(details.id)}
             >
-              {/* {wishlist.includes(item.id) ? <FaHeart /> : <FaRegHeart />} */}
+              {appContext.wishlist.includes(appContext.item.id) ? <FaHeart /> : <FaRegHeart />}
             </button>
             {details.name}
           </h2>

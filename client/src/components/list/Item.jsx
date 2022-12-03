@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import { FaHeart, FaRegHeart, FaMountain } from 'react-icons/fa';
+import { FaHeart, FaRegHeart, FaMountain } from 'react-icons/fa';
 
 export default function Item(props) {
   const {
@@ -16,7 +16,7 @@ export default function Item(props) {
           className='addToWishlistButton'
           onClick={()=>toggleWishlist(item.id)}
         >
-          {/* {wishlist.includes(item.id) ? <FaHeart /> : <FaRegHeart />} */}
+          {wishlist.includes(item.id) ? <FaHeart /> : <FaRegHeart />}
         </button>
         <Link to={route}>{item.name}</Link>
       </h3>
@@ -27,9 +27,9 @@ export default function Item(props) {
       <p>
         Difficulty Rating: {item.rating}&nbsp;
         <span className={`item-rating item-rating_${item.rating}`}>
-          {/* <FaMountain />
           <FaMountain />
-          <FaMountain /> */}
+          <FaMountain />
+          <FaMountain />
         </span>
       </p>
       <p>{item.promo}</p>

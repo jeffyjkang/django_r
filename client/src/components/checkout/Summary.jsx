@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import './checkout.css'
-// import { FaMinusCircle } from 'react-icons/fa';
+import { FaMinusCircle } from 'react-icons/fa';
 
 export default function Summary(props) {
   const {duration, item, clearOrderItem } = props;
@@ -30,7 +30,7 @@ export default function Summary(props) {
           className='package-remove-button'
           onClick={()=>clearOrderItem(item.id)}
         >
-          {/* <FaMinusCircle /> */}
+          <FaMinusCircle />
         </button>
         {item.name} - ${item.price} starts on {item.start} for {item.tour_length} days.
       </div>

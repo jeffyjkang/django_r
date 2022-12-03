@@ -7,7 +7,7 @@ import Sidebar from './Sidebar';
 export default function Layout(props) {
   return (
     <div className='container'>
-      <Navbar />
+      <Navbar item={props.item}/>
       <Sidebar />
       <section className='content'>
         <AppContext.Provider value={props.appState}>

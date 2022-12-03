@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { AppContext } from "../App";
+import Form from "../components/checkout/Form";
 import Summary from "../components/checkout/Summary";
 
 export function Checkout() {
@@ -45,9 +46,7 @@ export function Checkout() {
               {item && <Summary duration={59} item={item} clearOrderItem={clearOrderItem}/>}
             </section>
             <section className='checkout-form'>
-              <form>
-                {/* {TODO: make form} */}
-              </form>
+              <Form validationErrors={validationErrors} booking={booking} updateField={updateField}/>
             </section>
             <section className='checkout-actions-section'>
               <div className='checkout-actions'>
