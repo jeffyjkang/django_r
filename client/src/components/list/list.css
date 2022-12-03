@@ -1,0 +1,62 @@
+.filters {
+  background-color: #fff6e6;
+  margin: 0;
+  padding: 1rem;
+}
+.filters label,
+.filters input {
+  font-size: 14px;
+  color: #111;
+}
+.filters label {
+  text-align: right;
+  padding: 0 0 0 2rem;
+}
+.filters input {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+.filters button {
+  border: 0px;
+  background-color: #007d8c;
+  color: #fff;
+  padding: 1rem;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.addToWishlistButton {
+  background-color: transparent;
+  border: 0;
+}
+.addToWishlistButton svg {
+  width: 24px;
+  height: 24px;
+  color: #f16664;
+}
+.item h3 {
+  font-size: 18px;
+}
+.item img {
+  float: right;
+}
+.item-price {
+  font-weight: bold;
+}
+.item-rating svg {
+  color: #aaa;
+}
+.item-rating_easy svg:nth-child(1),
+.item-rating_medium svg:nth-child(1),
+.item-rating_medium svg:nth-child(2),
+.item-rating_hard svg:nth-child(1),
+.item-rating_hard svg:nth-child(2),
+.item-rating_hard svg:nth-child(3) {
+  color: #007d8c;
+}
+.pagination {
+  margin: 0.5rem;
+  padding: 1rem;
+}

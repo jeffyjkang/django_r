@@ -1,0 +1,37 @@
+.checkout {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.checkout-header {
+  flex: 100%;
+}
+.checkout-summary {
+  flex: 100%;
+}
+.checkout-form {
+  flex: 100%;
+  display: flex;
+}
+.checkout-actions-section {
+  display: flex;
+  flex-direction: row;
+}
+.checkout-actions {
+  flex: 50%;
+}
+.checkout-actions button {
+  border: 1px solid #aaa;
+  background-color: #79cccd;
+  color: #111;
+  padding: 2rem;
+  font-size: 14px;
+  font-weight: bold;
+}
+.checkout-actions button:hover {
+  border-color: #333;
+  background-color: #555;
+  color: #eee;
+}

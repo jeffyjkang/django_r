@@ -1,0 +1,13 @@
+.onHold {
+  background-color: #f16664;
+  color: #fff;
+  padding: 1rem;
+  font-size: 12px;
+  text-align: center;
+}
+.package-regmove-button {
+  borer-width: 0;
+  background-color: transparent;
+  color: #333;
+  font-size: 16px;
+}
